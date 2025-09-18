@@ -1,0 +1,6 @@
+build/
+--pycache--/
+*.spec
+*.exe
+.env
+
