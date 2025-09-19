@@ -4,6 +4,7 @@ import requests
 import pyperclip
 import vt
 import time
+import sys
 from win11toast import toast
 from dotenv import load_dotenv
 
@@ -11,7 +12,7 @@ load_dotenv()
 APIKEY = os.getenv("VT_API_KEY")
 if not APIKEY:
     print("Error: VT_API_KEY environment variable is not set ")
-    exit()
+    sys.exit(1)
 
 json_log_path = f"{os.path.expanduser("~")}\\AppData\\Local\\lsclogs.json"
 
